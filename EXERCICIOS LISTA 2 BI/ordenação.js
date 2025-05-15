@@ -2,7 +2,7 @@ function exe4(){
     let a, b, c, d //valores
     let conta = 1
     let aux //variavel auxiliar
-    let grupo = 1
+    let grupo = 1 //repete o alert 5 vezes para cada grupo
     while(grupo <= 5) {
 
     a = Number(prompt(`Informe o valor de A`))
