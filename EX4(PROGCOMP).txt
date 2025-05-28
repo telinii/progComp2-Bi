@@ -1,0 +1,6 @@
+EX4(PROGCOMP)
+
+let numero = Number(prompt(`Ìnforme o numero da tabuada`))
+    // estrutura de repetição com o for
+    for(let conta = 1; conta <= 10; conta++)
+        console.log(`${numero} x ${conta} == ${numero*conta}`)
