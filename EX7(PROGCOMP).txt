@@ -1,0 +1,38 @@
+EX7(PROGCOMP)
+
+
+let idade, peso, altura, qtdeIdade50Mais = 0, qtdeIdadeEntre10e20 = 0, somaAltura = 0
+    let qtdePesoMenor40 = 0
+    for(let conta=1;conta<=5;conta++) {
+        do{
+            idade = Number(prompt(`Informe idade`))
+
+
+        }
+        while (idade < 0)
+        do {
+            peso = Number(prompt(`Informe peso`))
+        
+        }
+        while (peso < 0)
+        do {
+            altura = Number(prompt(`INforme altura`))
+        
+        }
+        while (altura < 0)
+        //qnts pessoa idade > 50 anos
+    if(idade > 50) {
+        qtdeIdade50Mais++
+    }
+    // media das alturas das pessoas idade entre 10 e 20
+    if(idade >= 10 && idade <= 20) {
+    somaAltura = somaAltura + altura
+    qtdeIdadeEntre10e20++
+    }
+    if(peso < 40) {
+        qtdePesoMenor40++
+    }
+}   
+    alert(`Item 1:  ${qtdeIdade50Mais}` +
+    `Item 2:  ${somaAltura/qtdeIdade50Mais}` +
+    `Item 3:  ${qtdePesoMenor40 / 5 * 100}` ) 
