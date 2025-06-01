@@ -1,0 +1,38 @@
+EX7
+
+
+// Listas com dados das 5 pessoas
+let idades = [55, 18, 12, 22, 9];
+let alturas = [1.70, 1.60, 1.50, 1.75, 1.40];
+let pesos = [65, 45, 38, 72, 30];
+
+// Variáveis para contar e somar
+let mais50 = 0; // Quantidade com idade > 50
+let somaAlturas = 0; // Soma das alturas entre 10 e 20 anos
+let conta1020 = 0; // Contador de pessoas entre 10 e 20 anos
+let pesoMenor40 = 0; // Quantidade com peso < 40kg
+
+// Laço para percorrer as 5 pessoas
+for (let i = 0; i < 5; i++) {
+  if (idades[i] > 50) {
+    mais50++;
+  }
+
+  if (idades[i] >= 10 && idades[i] <= 20) {
+    somaAlturas += alturas[i];
+    conta1020++;
+  }
+
+  if (pesos[i] < 40) {
+    pesoMenor40++;
+  }
+}
+
+// Cálculos finais
+let mediaAltura = conta1020 > 0 ? somaAlturas / conta1020 : 0;
+let porcentagemPeso = (pesoMenor40 / 5) * 100;
+
+// Resultados
+console.log("Quantidade com mais de 50 anos: " + mais50);
+console.log("Média das alturas entre 10 e 20 anos: " + mediaAltura.toFixed(2));
+console.log("Porcentagem com peso menor que 40 kg: " + porcentagemPeso.toFixed(2) + "%");

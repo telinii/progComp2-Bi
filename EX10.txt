@@ -1,0 +1,37 @@
+EX10
+
+
+
+let numeros = [2, 3, 5, 8, 11, 14, 17, 20, 23, 30];
+
+let somaPares = 0;
+let somaPrimos = 0;
+
+for (let i = 0; i < 10; i++) {
+  let n = numeros[i];
+
+  // Se for par
+  if (n % 2 === 0) {
+    somaPares += n;
+  }
+
+  // Verifica se é primo
+  let ehPrimo = true;
+  if (n < 2) {
+    ehPrimo = false;
+  } else {
+    for (let j = 2; j < n; j++) {
+      if (n % j === 0) {
+        ehPrimo = false;
+        break;
+      }
+    }
+  }
+
+  if (ehPrimo) {
+    somaPrimos += n;
+  }
+}
+
+console.log("Soma dos pares: " + somaPares);
+console.log("Soma dos primos: " + somaPrimos);
