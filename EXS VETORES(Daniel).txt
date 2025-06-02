@@ -1,0 +1,59 @@
+EXS VETORES(Daniel)
+
+
+function exe1 () {
+    let vet = []
+    let showpares, showimpares
+    let i
+
+
+    showpares = " "
+    showimpares = " "
+
+    for(i = 0; i < 6; i++) {
+        vet.push(Number(prompt(`Informe o ${i+1}o. numero`)))
+    
+        
+    }
+    //fazer os calculos
+    let par = [], impar = []
+    for(let i = 0; i < 6; i++) {
+        if(vet[i] % 2 == 0){
+            par.push(vet[i])    
+        }
+        else {
+            impar.push(vet[i])
+        }
+        
+    }
+
+    alert(`Temos ${par.length} elementos pares: ${par}`)
+    alert(`Temos ${impar.length} elementos pares: ${impar}`)
+
+}
+// ler um vetor de 10 elementos
+//some 10 nos elementos das posições pares
+//multiplique por 5 nos elementos das posições impares
+
+
+function exe2 () {
+    let vet = []
+    let pares = []
+    let impares = []
+    let i 
+
+    for(i = 0; i < 10; i++) {
+        vet.push(Number(prompt(`Digite o ${i+1}`)))
+    }
+    for(i = 0; i < 10; i++) {
+        if(vet[i] % 2 == 0) {
+            pares.push(vet[i] + 10)
+        }
+        else {
+            impares.push(vet[i] * 5)
+        }
+    }
+    alert(`Os numeros pares digitados com acrescimo de 10: ${pares}`)
+    alert(`OS numeros impares digitados multiplicados por 5: ${impares}`)
+    
+}
