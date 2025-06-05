@@ -1,0 +1,73 @@
+EXS PRA PROVA
+
+
+/*
+    Crie uma função exe4() que:
+1.	Leia 8 números e armazene em um vetor.
+2.	Calcule a média desses números.
+3.	Crie e exiba um novo vetor com os números maiores do que a média.
+4.	Ao final, mostre:
+
+- > A média calculada
+- >	Quantos valores estão acima da média
+- >	Os próprios valores acima da média
+
+Dica:
+Use dois vetores: um para os valores lidos, outro para os que estão acima da média.
+    */
+
+    let i = 0
+    let n = []
+    let media = 0
+    let acimaMedia
+    
+    for(i = 0; i < 8; i++) {
+        n.push(Number(prompt(`Informe a ${i + 1}ª nota`)))
+
+
+    }
+    alert(`a média é ${media / }`)
+
+}
+
+
+function exe5 () {
+    /* Exercício 5 – Comparações com o Primeiro Elemento
+Crie uma função exe5() que:
+
+1.	Leia 10 números inteiros e armazene em um vetor.
+2.	Compare todos os elementos com o primeiro número digitado.
+3.	Ao final, exiba:
+
+- >	Quantos valores são maiores que o primeiro
+- >	Quantos são menores
+- >	Quantos são iguais
+
+Exemplo:
+Se o vetor for [7, 3, 7, 10, 2, 7, 5, 7, 1, 9], o programa deve exibir:
+	Maiores que o primeiro: 2
+	Menores que o primeiro: 3
+	Iguais ao primeiro: 4
+    */
+}
+
+ 
+function exe6 () {
+    /* Exercício 6 – Procurando um Número no Vetor
+Crie uma função exe6() que:
+
+- >	Leia 12 números inteiros e armazene em um vetor.
+- >	Em seguida, peça ao usuário para digitar um número a ser buscado.
+- >	O programa deve:
+- >	Informar se o número está ou não no vetor.
+- >	Se estiver, mostrar todas as posições onde ele aparece.
+- >	Mostrar também quantas vezes ele aparece.
+
+    Exemplo:
+Se o vetor for:
+[4, 7, 2, 7, 9, 1, 7, 3, 4, 8, 7, 5]
+E o número digitado for 7:
+O número 7 aparece 4 vezes, nas posições: 1, 3, 6, 10
+    */
+
+}
