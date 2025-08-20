@@ -1,0 +1,41 @@
+Matriz3x3
+
+
+let matriz = []
+    let soma = 0
+    let qtde = 0
+
+    // Preencher a matriz com números aleatórios de 0 a 9
+    for (let i = 0; i < 3; i++) {
+        matriz[i] = []
+        for (let j = 0; j < 3; j++) {
+            matriz[i][j] = parseInt(Math.random() * 10) // gera inteiro de 0 a 9
+        }
+    }
+
+    // Soma dos elementos
+    for (let i = 0; i < matriz.length; i++) {
+        for (let j = 0; j < matriz[i].length; j++) {
+            soma += matriz[i][j]
+        }
+    }
+
+    // Quantidade de elementos pares
+    for (let i = 0; i < matriz.length; i++) {
+        for (let j = 0; j < matriz[i].length; j++) {
+            if (matriz[i][j] % 2 === 0) {
+                qtde++
+            }
+        }
+    }
+
+    // Mostrar diagonal secundária
+    let diagonalSec = []
+    for (let i = 0; i < matriz.length; i++) {
+        diagonalSec.push(matriz[i][(matriz.length - 1) - i])
+    }
+
+    console.log("Matriz:", matriz)
+    console.log("Soma dos elementos:", soma)
+    console.log("Quantidade de pares:", qtde)
+    console.log("Diagonal secundária:", diagonalSec)
